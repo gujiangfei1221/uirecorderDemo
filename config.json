@@ -1,0 +1,12 @@
+{
+    "webdriver": {
+        "host": "192.168.201.41",
+        "port": "4444",
+        "browsers": "chrome"
+    },
+    "vars": {},
+    "recorder": {
+        "pathAttrs": "data-id,data-name,type,data-type,data-role,data-value",
+        "attrValueBlack": ""
+    }
+}

@@ -1,0 +1,4 @@
+- 1.spec.js是项目注册简单版脚本
+- 2.spec.js是招标项目简单版脚本
+- 3.spec.js是自行招标简单版脚本
+- upload.spec.js是上传附件脚本

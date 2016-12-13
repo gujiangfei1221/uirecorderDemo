@@ -44,9 +44,15 @@ module.exports = function(){
                .sleep(300).mouseMove(10, 15).click(0);
     });
 
-    it('sendKeys: 111', function(){
-        return driver.sendKeys('111');
+    // it('sendKeys: 111', function(){
+    //     return driver.sendKeys('1213ceshixiangmu');
+    // });
+
+    it('sendKeys: 111',function () {
+        return driver.sleep(300).wait('div.span5 > span.mini-required > span.mini-textbox-border > input[type="text"].mini-textbox-input',30000).val(testVars['xiangmumingcheng']);
     });
+
+
 
     it('mouseDown: div:nth-child(2) > div:nth-child(2) > span.mini-required > span.mini-buttonedit-border > input[type="text"].mini-buttonedit-input, 94.5, 16, 0', function(){
         return driver.sleep(300).wait('div:nth-child(2) > div:nth-child(2) > span.mini-required > span.mini-buttonedit-border > input[type="text"].mini-buttonedit-input', 30000)

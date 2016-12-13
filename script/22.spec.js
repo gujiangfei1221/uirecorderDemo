@@ -44,8 +44,12 @@ module.exports = function(){
                .sleep(300).mouseMove(18, 8).click(0);
     });
 
-    it('sendKeys: 111', function(){
-        return driver.sendKeys('111');
+    // it('sendKeys: 111', function(){
+    //     return driver.sendKeys('1213ceshixiangmu');
+    // });
+
+    it('搜索',function () {
+        return driver.sleep(300).wait('div:nth-child(6) > span.mini-textbox > span.mini-textbox-border > input[type="text"].mini-textbox-input').val(testVars['xiangmumingcheng']);
     });
 
     it('click: 搜索 ( span.cond-srh-btn-text, 29, 12, 0 )', function(){
@@ -114,8 +118,12 @@ module.exports = function(){
                .sleep(300).mouseMove(280, 17).click(0);
     });
 
-    it('sendKeys: 111', function(){
-        return driver.sendKeys('111');
+    // it('sendKeys: 111', function(){
+    //     return driver.sendKeys('111');
+    // });
+
+    it('',function () {
+        return driver.sleep(300).wait('div.span5 > span.mini-required > span.mini-textbox-border > input[type="text"].mini-textbox-input').val(testVars['biaoduanmingcheng'])
     });
 
     it('click: 挑选 ( #btnSelectBD span, 21, 11, 0 )', function(){
@@ -175,6 +183,10 @@ module.exports = function(){
                .wait('iframe[name="mini-iframe-56"]', 30000).then(function(element){
                    return this.switchFrame(element).wait('body');
                });
+    });
+
+    it('选择资格后审',function () {
+        return driver.sleep(300).wait('/html/body/div[2]/div/div/div[2]/div[2]/div/div/div[4]/div[2]/div/table/tbody/tr/td/div[1]/div[2]/span').sleep(300).mouseMove().click();
     });
 
     it('click: #unitprojectdesp textarea, 31, 13, 0', function(){

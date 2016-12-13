@@ -4,7 +4,10 @@
         "port": "4444",
         "browsers": "chrome"
     },
-    "vars": {},
+    "vars": {
+        "xiangmumingcheng":"1213ceshixiangmu001",
+        "biaoduanmingcheng":"标段1"
+    },
     "recorder": {
         "pathAttrs": "data-id,data-name,type,data-type,data-role,data-value",
         "attrValueBlack": ""

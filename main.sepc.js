@@ -21,11 +21,11 @@ module.exports = function(){
     //通用脚本，登录并打开项目注册模块
     callSpec('commons/common.spec.js');
     //项目注册测试
-    callSpec('script/1.spec.js');
+    callSpec('script1/1.spec.js');
     //招标项目测试
-    callSpec('script/2.spec.js');
+    callSpec('script1/2.spec.js');
     //自行招标测试
-    callSpec('script/3.spec.js');
+    callSpec('script1/3.spec.js');
 
     function _(str){
         return typeof str === 'string' && str.replace(/\{\{(.+?)\}\}/g, function(all, key){
